@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas 4 JS_MKhalfanRamaDarmawan</title>
+    <style>
+        *{
+            background-color: rgb(190, 129, 23);
+        }
+        table {
+            margin-top: 10%;
+            border-radius: 7px;
+            background-color: rgb(255, 255, 255);
+        }
+        td, input{
+            background-color: rgb(255, 255, 255);
+        }
+    </style>
+</head>
+
+<body>
+    <table border="0" align="center" cellspacing="9px" cellpadding="3px">
+        <form id="formulir">
+            <tr>
+                <td>
+                    <input type="text" name="username" placeholder="Username" onclick="kosongUname()">
+                </td>
+            </tr>
+            <tr>
+                <td>
+                    <input type="password" name="password" placeholder="Password" onclick="kosongPwd()">
+                </td>
+            </tr>
+            <tr>
+                <td align="center">
+                    <input type="button" name="login" id="login" value="Login" onclick="cekLogin()">
+                </td>
+            </tr>
+        </form>
+    </table>
+    <script src="skripku.js"></script>
+</body>
+
+</html>
