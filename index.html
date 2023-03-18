@@ -7,38 +7,66 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tugas 4 JS_MKhalfanRamaDarmawan</title>
     <style>
-        *{
-            background-color: rgb(190, 129, 23);
+        * {
+            font-family: cursive;
+            font-size: x-large;
+            
         }
+
         table {
-            margin-top: 10%;
             border-radius: 7px;
-            background-color: rgb(255, 255, 255);
+            background-color: rgb(247, 251, 48);
+            box-shadow: 7px 9px rgb(178, 144, 52);
+            margin-top: 10%;
+            padding: 10px;
         }
-        td, input{
-            background-color: rgb(255, 255, 255);
+
+        td {
+            border-style: hidden;
+        }
+
+        th {
+            border-style: hidden;
+        }
+
+        input {
+            background-color: rgb(6, 245, 205);
+            border-style: hidden;
+            border-radius: 5px;
+            margin: 1px;
         }
     </style>
 </head>
 
 <body>
-    <table border="0" align="center" cellspacing="9px" cellpadding="3px">
+    <table align="center" cellpadding="3px">
         <form id="formulir">
-            <tr>
-                <td>
-                    <input type="text" name="username" placeholder="Username" onclick="kosongUname()">
-                </td>
-            </tr>
-            <tr>
-                <td>
-                    <input type="password" name="password" placeholder="Password" onclick="kosongPwd()">
-                </td>
-            </tr>
-            <tr>
-                <td align="center">
-                    <input type="button" name="login" id="login" value="Login" onclick="cekLogin()">
-                </td>
-            </tr>
+            <thead>
+                <tr>
+                    <th>
+                        Sign In
+                    </th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>
+                        <input type="text" name="username" placeholder="Username" onclick="kosongUname()">
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="password" name="password" placeholder="Password" onclick="kosongPwd()">
+                    </td>
+                </tr>
+            </tbody>
+            <tfoot>
+                <tr>
+                    <td align="center">
+                        <input type="button" name="login" id="login" value="Login" onclick="cekLogin()">
+                    </td>
+                </tr>
+            </tfoot>
         </form>
     </table>
     <script src="skripku.js"></script>
